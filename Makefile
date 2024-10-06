@@ -1,6 +1,6 @@
 CC = cc
 CFLAGS = -Wall -g
-LDFLAGS = -lraylib
+LDFLAGS = -lSDL2
 
 TARGET_EXEC := main.out
 
