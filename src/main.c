@@ -235,13 +235,11 @@ int main(void) {
     for (int i = 0; i < particleCount; i++) {
       integrate(&particles[i], duration);
 
-      // Bounce off the ground
       if (particles[i].position.y < 0.3f) {
         particles[i].position.y = 0.3f;
         particles[i].velocity.y = -particles[i].velocity.y * 0.8f;
       }
 
-      // Remove particle if it goes too far
       if (magnitude(&particles[i].position) > 20.0f) {
         particles[i] = particles[particleCount - 1];
         particleCount--;
