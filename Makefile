@@ -1,6 +1,6 @@
 CC = cc
 CFLAGS = -Wall -g
-LDFLAGS = -lSDL2
+LDFLAGS = -lSDL2 -lGL -lGLU -lglut -lm
 
 TARGET_EXEC := main.out
 

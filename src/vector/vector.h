@@ -26,9 +26,9 @@ void normalize(struct Vector *v);
 float magnitude(struct Vector *v);
 float squared_magnitude(struct Vector *v);
 
-void operation_scalar(struct Vector *v, int factor, OPERATION x);
+void operation_scalar(struct Vector *v, float scale, OPERATION x);
 
-void add_scaled_vector(struct Vector *v1, struct Vector *v2, int factor);
+void add_scaled_vector(struct Vector *v1, struct Vector *v2, float scale);
 
 struct Vector component_product(struct Vector *v1, struct Vector *v2);
 void component_product_update(struct Vector *v1, struct Vector *v2);
